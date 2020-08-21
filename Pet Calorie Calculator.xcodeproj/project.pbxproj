@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47E4589A24EF512800335E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4589924EF512800335E9C /* AppDelegate.swift */; };
+		47E4589C24EF512800335E9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4589B24EF512800335E9C /* SceneDelegate.swift */; };
+		47E4589E24EF512800335E9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4589D24EF512800335E9C /* ViewController.swift */; };
+		47E458A124EF512800335E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E4589F24EF512800335E9C /* Main.storyboard */; };
+		47E458A324EF512900335E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E458A224EF512900335E9C /* Assets.xcassets */; };
+		47E458A624EF512900335E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E458A424EF512900335E9C /* LaunchScreen.storyboard */; };
+		47E458B124EF512900335E9C /* Pet_Calorie_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E458B024EF512900335E9C /* Pet_Calorie_CalculatorTests.swift */; };
+		47E458BC24EF512900335E9C /* Pet_Calorie_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E458BB24EF512900335E9C /* Pet_Calorie_CalculatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47E458AD24EF512900335E9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47E4588E24EF512800335E9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47E4589524EF512800335E9C;
+			remoteInfo = "Pet Calorie Calculator";
+		};
+		47E458B824EF512900335E9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47E4588E24EF512800335E9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47E4589524EF512800335E9C;
+			remoteInfo = "Pet Calorie Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47E4589624EF512800335E9C /* Pet Calorie Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Calorie Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E4589924EF512800335E9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47E4589B24EF512800335E9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		47E4589D24EF512800335E9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47E458A024EF512800335E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47E458A224EF512900335E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47E458A524EF512900335E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47E458A724EF512900335E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E458AC24EF512900335E9C /* Pet Calorie CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet Calorie CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E458B024EF512900335E9C /* Pet_Calorie_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet_Calorie_CalculatorTests.swift; sourceTree = "<group>"; };
+		47E458B224EF512900335E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E458B724EF512900335E9C /* Pet Calorie CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet Calorie CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E458BB24EF512900335E9C /* Pet_Calorie_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet_Calorie_CalculatorUITests.swift; sourceTree = "<group>"; };
+		47E458BD24EF512900335E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47E4589324EF512800335E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47E458A924EF512900335E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47E458B424EF512900335E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47E4588D24EF512800335E9C = {
+			isa = PBXGroup;
+			children = (
+				47E4589824EF512800335E9C /* Pet Calorie Calculator */,
+				47E458AF24EF512900335E9C /* Pet Calorie CalculatorTests */,
+				47E458BA24EF512900335E9C /* Pet Calorie CalculatorUITests */,
+				47E4589724EF512800335E9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47E4589724EF512800335E9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47E4589624EF512800335E9C /* Pet Calorie Calculator.app */,
+				47E458AC24EF512900335E9C /* Pet Calorie CalculatorTests.xctest */,
+				47E458B724EF512900335E9C /* Pet Calorie CalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47E4589824EF512800335E9C /* Pet Calorie Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				47E4589924EF512800335E9C /* AppDelegate.swift */,
+				47E4589B24EF512800335E9C /* SceneDelegate.swift */,
+				47E4589D24EF512800335E9C /* ViewController.swift */,
+				47E4589F24EF512800335E9C /* Main.storyboard */,
+				47E458A224EF512900335E9C /* Assets.xcassets */,
+				47E458A424EF512900335E9C /* LaunchScreen.storyboard */,
+				47E458A724EF512900335E9C /* Info.plist */,
+			);
+			path = "Pet Calorie Calculator";
+			sourceTree = "<group>";
+		};
+		47E458AF24EF512900335E9C /* Pet Calorie CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				47E458B024EF512900335E9C /* Pet_Calorie_CalculatorTests.swift */,
+				47E458B224EF512900335E9C /* Info.plist */,
+			);
+			path = "Pet Calorie CalculatorTests";
+			sourceTree = "<group>";
+		};
+		47E458BA24EF512900335E9C /* Pet Calorie CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				47E458BB24EF512900335E9C /* Pet_Calorie_CalculatorUITests.swift */,
+				47E458BD24EF512900335E9C /* Info.plist */,
+			);
+			path = "Pet Calorie CalculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47E4589524EF512800335E9C /* Pet Calorie Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47E458C024EF512900335E9C /* Build configuration list for PBXNativeTarget "Pet Calorie Calculator" */;
+			buildPhases = (
+				47E4589224EF512800335E9C /* Sources */,
+				47E4589324EF512800335E9C /* Frameworks */,
+				47E4589424EF512800335E9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pet Calorie Calculator";
+			productName = "Pet Calorie Calculator";
+			productReference = 47E4589624EF512800335E9C /* Pet Calorie Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47E458AB24EF512900335E9C /* Pet Calorie CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47E458C324EF512900335E9C /* Build configuration list for PBXNativeTarget "Pet Calorie CalculatorTests" */;
+			buildPhases = (
+				47E458A824EF512900335E9C /* Sources */,
+				47E458A924EF512900335E9C /* Frameworks */,
+				47E458AA24EF512900335E9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47E458AE24EF512900335E9C /* PBXTargetDependency */,
+			);
+			name = "Pet Calorie CalculatorTests";
+			productName = "Pet Calorie CalculatorTests";
+			productReference = 47E458AC24EF512900335E9C /* Pet Calorie CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		47E458B624EF512900335E9C /* Pet Calorie CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47E458C624EF512900335E9C /* Build configuration list for PBXNativeTarget "Pet Calorie CalculatorUITests" */;
+			buildPhases = (
+				47E458B324EF512900335E9C /* Sources */,
+				47E458B424EF512900335E9C /* Frameworks */,
+				47E458B524EF512900335E9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47E458B924EF512900335E9C /* PBXTargetDependency */,
+			);
+			name = "Pet Calorie CalculatorUITests";
+			productName = "Pet Calorie CalculatorUITests";
+			productReference = 47E458B724EF512900335E9C /* Pet Calorie CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47E4588E24EF512800335E9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Fan Liang";
+				TargetAttributes = {
+					47E4589524EF512800335E9C = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					47E458AB24EF512900335E9C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 47E4589524EF512800335E9C;
+					};
+					47E458B624EF512900335E9C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 47E4589524EF512800335E9C;
+					};
+				};
+			};
+			buildConfigurationList = 47E4589124EF512800335E9C /* Build configuration list for PBXProject "Pet Calorie Calculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47E4588D24EF512800335E9C;
+			productRefGroup = 47E4589724EF512800335E9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47E4589524EF512800335E9C /* Pet Calorie Calculator */,
+				47E458AB24EF512900335E9C /* Pet Calorie CalculatorTests */,
+				47E458B624EF512900335E9C /* Pet Calorie CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47E4589424EF512800335E9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47E458A624EF512900335E9C /* LaunchScreen.storyboard in Resources */,
+				47E458A324EF512900335E9C /* Assets.xcassets in Resources */,
+				47E458A124EF512800335E9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47E458AA24EF512900335E9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47E458B524EF512900335E9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47E4589224EF512800335E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47E4589E24EF512800335E9C /* ViewController.swift in Sources */,
+				47E4589A24EF512800335E9C /* AppDelegate.swift in Sources */,
+				47E4589C24EF512800335E9C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47E458A824EF512900335E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47E458B124EF512900335E9C /* Pet_Calorie_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47E458B324EF512900335E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47E458BC24EF512900335E9C /* Pet_Calorie_CalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47E458AE24EF512900335E9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47E4589524EF512800335E9C /* Pet Calorie Calculator */;
+			targetProxy = 47E458AD24EF512900335E9C /* PBXContainerItemProxy */;
+		};
+		47E458B924EF512900335E9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47E4589524EF512800335E9C /* Pet Calorie Calculator */;
+			targetProxy = 47E458B824EF512900335E9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47E4589F24EF512800335E9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47E458A024EF512800335E9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47E458A424EF512900335E9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47E458A524EF512900335E9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47E458BE24EF512900335E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47E458BF24EF512900335E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47E458C124EF512900335E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pet Calorie Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "p.Pet-Calorie-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47E458C224EF512900335E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pet Calorie Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "p.Pet-Calorie-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		47E458C424EF512900335E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pet Calorie CalculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "p.Pet-Calorie-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet Calorie Calculator.app/Pet Calorie Calculator";
+			};
+			name = Debug;
+		};
+		47E458C524EF512900335E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pet Calorie CalculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "p.Pet-Calorie-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet Calorie Calculator.app/Pet Calorie Calculator";
+			};
+			name = Release;
+		};
+		47E458C724EF512900335E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pet Calorie CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "p.Pet-Calorie-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pet Calorie Calculator";
+			};
+			name = Debug;
+		};
+		47E458C824EF512900335E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pet Calorie CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "p.Pet-Calorie-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pet Calorie Calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47E4589124EF512800335E9C /* Build configuration list for PBXProject "Pet Calorie Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47E458BE24EF512900335E9C /* Debug */,
+				47E458BF24EF512900335E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47E458C024EF512900335E9C /* Build configuration list for PBXNativeTarget "Pet Calorie Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47E458C124EF512900335E9C /* Debug */,
+				47E458C224EF512900335E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47E458C324EF512900335E9C /* Build configuration list for PBXNativeTarget "Pet Calorie CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47E458C424EF512900335E9C /* Debug */,
+				47E458C524EF512900335E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47E458C624EF512900335E9C /* Build configuration list for PBXNativeTarget "Pet Calorie CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47E458C724EF512900335E9C /* Debug */,
+				47E458C824EF512900335E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47E4588E24EF512800335E9C /* Project object */;
+}
