@@ -15,6 +15,7 @@
 		47E458A624EF512900335E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E458A424EF512900335E9C /* LaunchScreen.storyboard */; };
 		47E458B124EF512900335E9C /* Pet_Calorie_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E458B024EF512900335E9C /* Pet_Calorie_CalculatorTests.swift */; };
 		47E458BC24EF512900335E9C /* Pet_Calorie_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E458BB24EF512900335E9C /* Pet_Calorie_CalculatorUITests.swift */; };
+		47E458CA24EF6E9D00335E9C /* RER.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E458C924EF6E9D00335E9C /* RER.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		47E458B724EF512900335E9C /* Pet Calorie CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet Calorie CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E458BB24EF512900335E9C /* Pet_Calorie_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet_Calorie_CalculatorUITests.swift; sourceTree = "<group>"; };
 		47E458BD24EF512900335E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E458C924EF6E9D00335E9C /* RER.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RER.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		47E4589824EF512800335E9C /* Pet Calorie Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				47E458C924EF6E9D00335E9C /* RER.swift */,
 				47E4589924EF512800335E9C /* AppDelegate.swift */,
 				47E4589B24EF512800335E9C /* SceneDelegate.swift */,
 				47E4589D24EF512800335E9C /* ViewController.swift */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47E4589E24EF512800335E9C /* ViewController.swift in Sources */,
+				47E458CA24EF6E9D00335E9C /* RER.swift in Sources */,
 				47E4589A24EF512800335E9C /* AppDelegate.swift in Sources */,
 				47E4589C24EF512800335E9C /* SceneDelegate.swift in Sources */,
 			);
