@@ -15,15 +15,29 @@ class ViewController: UIViewController {
     
     public var rer:RER!
     
+    //number that contains the weight
+    public var number:Double!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        if ()
+        
+        
+        if (isNumeber(weight.text ?? "0")){
+            
+            rer = RER(number)
+        }else {
+            if (rer != nil){
+                
+            }
+        }
         
     }
     
-    func isLetter(_ input: String) -> Bool {
+    //check the input whether is numbers
+    func isNumeber(_ input: String) -> Bool {
         let myDouble = Double(input) ?? 0
+        number = myDouble
         if (myDouble == 0){
             return false
         }else{
@@ -32,6 +46,19 @@ class ViewController: UIViewController {
     }
     
     
+    
+    @IBAction func next(_ sender: Any) {
+        if (!isNumeber(weight.text ?? "0")){
+            let alert = UIAlertController(title: "Please enter the number", message: nil, preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+            self.present(alert, animated: true)
+        }else{
+            let vc = storyboard?.instantiateViewController(identifier: "type") as! TypeViewController
+            vc.title = "Type"
+            navigationController?.pushViewController(vc, animated: true)        }
+    }
     
 
 }
