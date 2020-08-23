@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4786C4C624F25AFE003093BD /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786C4C524F25AFE003093BD /* AgeViewController.swift */; };
 		47E4589A24EF512800335E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4589924EF512800335E9C /* AppDelegate.swift */; };
 		47E4589C24EF512800335E9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4589B24EF512800335E9C /* SceneDelegate.swift */; };
 		47E4589E24EF512800335E9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4589D24EF512800335E9C /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4786C4C524F25AFE003093BD /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
 		47E4589624EF512800335E9C /* Pet Calorie Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Calorie Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E4589924EF512800335E9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47E4589B24EF512800335E9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				47E458A224EF512900335E9C /* Assets.xcassets */,
 				47E458A424EF512900335E9C /* LaunchScreen.storyboard */,
 				47E458A724EF512900335E9C /* Info.plist */,
+				4786C4C524F25AFE003093BD /* AgeViewController.swift */,
 			);
 			path = "Pet Calorie Calculator";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				47E4589E24EF512800335E9C /* ViewController.swift in Sources */,
 				47E458CC24F1848800335E9C /* TypeViewController.swift in Sources */,
+				4786C4C624F25AFE003093BD /* AgeViewController.swift in Sources */,
 				47E458CA24EF6E9D00335E9C /* RER.swift in Sources */,
 				47E4589A24EF512800335E9C /* AppDelegate.swift in Sources */,
 				47E4589C24EF512800335E9C /* SceneDelegate.swift in Sources */,

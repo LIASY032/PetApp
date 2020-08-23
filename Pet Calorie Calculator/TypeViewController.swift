@@ -9,6 +9,8 @@
 import UIKit
 
 class TypeViewController: UIViewController {
+    
+    public var cat:Bool!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,14 +19,21 @@ class TypeViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func catBotton(_ sender: Any) {
+        cat = true
+        let vc = storyboard?.instantiateViewController(identifier: "age") as! AgeViewController
+        vc.title = "Age"
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
-    */
-
+    
+    
+    @IBAction func dogBotton(_ sender: Any) {
+        cat = false
+        let vc = storyboard?.instantiateViewController(identifier: "age") as! AgeViewController
+        vc.title = "Age"
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
