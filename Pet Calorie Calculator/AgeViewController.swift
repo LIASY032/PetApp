@@ -17,6 +17,11 @@ class AgeViewController: UIViewController {
     }
     
 
+    @IBAction func adult(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "condition") as! CondtionViewController
+        vc.title = "Condition"
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 
 }

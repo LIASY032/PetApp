@@ -82,13 +82,79 @@
             </objects>
             <point key="canvasLocation" x="1705.7971014492755" y="136.95652173913044"/>
         </scene>
-        <!--View Controller-->
+        <!--Condtion View Controller-->
         <scene sceneID="Vb4-ax-cqx">
             <objects>
-                <viewController id="xHQ-fe-jHp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="condition" id="xHQ-fe-jHp" customClass="CondtionViewController" customModule="Pet_Calorie_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mR8-ou-fUY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KDl-Kt-uyM">
+                                <rect key="frame" x="107" y="156" width="200" height="485"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3th-P3-3Fy">
+                                        <rect key="frame" x="4" y="98" width="169" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Critical care/hospitalized"/>
+                                        <connections>
+                                            <action selector="hospitalized:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="uSz-oy-X93"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeF-jR-FeM">
+                                        <rect key="frame" x="25" y="155" width="127" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Weight loss/obese"/>
+                                        <connections>
+                                            <action selector="obese:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="PLi-0N-asm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-iA-5yP">
+                                        <rect key="frame" x="-3" y="236" width="183" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Overweight-prone/inactive"/>
+                                        <connections>
+                                            <action selector="inactive:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="kux-wJ-4tx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWR-vX-0Y0">
+                                        <rect key="frame" x="56" y="286" width="64" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Neutered"/>
+                                        <connections>
+                                            <action selector="neutered:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="LRR-Lh-Bq2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rq-Vb-5jx">
+                                        <rect key="frame" x="68" y="346" width="40" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Intact"/>
+                                        <connections>
+                                            <action selector="intact:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="Tcg-S8-dKa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHF-7A-9Vl">
+                                        <rect key="frame" x="56" y="384" width="64" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Lactation"/>
+                                        <connections>
+                                            <action selector="lactation:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="sG8-uy-RwA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="op2-NY-JaP">
+                                        <rect key="frame" x="56" y="439" width="66" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Gestation"/>
+                                        <connections>
+                                            <action selector="gestation:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="WJ7-1h-zH0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Ezu-PZ-XzZ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="FRp-Fz-Pku"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4nC-VG-OH2"/>
                     </view>
@@ -114,6 +180,9 @@
                                 <rect key="frame" x="174" y="496" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ADULT"/>
+                                <connections>
+                                    <action selector="adult:" destination="wi6-1p-SaQ" eventType="touchUpInside" id="fGG-NT-1xl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
