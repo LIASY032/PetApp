@@ -62,7 +62,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat" image="cat"/>
                                 <connections>
-                                    <action selector="catBottom:" destination="zt0-3l-zjV" eventType="touchUpInside" id="fX4-Wu-9hg"/>
+                                    <action selector="catBotton:" destination="zt0-3l-zjV" eventType="touchUpInside" id="fZM-RM-RYh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oeu-na-su9">
@@ -163,6 +163,41 @@
             </objects>
             <point key="canvasLocation" x="3734.7826086956525" y="136.95652173913044"/>
         </scene>
+        <!--Output View Controller-->
+        <scene sceneID="yjX-3C-l8V">
+            <objects>
+                <viewController storyboardIdentifier="output" id="Gb5-hL-TBi" customClass="OutputViewController" customModule="Pet_Calorie_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T45-za-5cu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="message" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-WY-ZtD">
+                                <rect key="frame" x="33" y="259" width="333" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LW2-wX-FXS">
+                                <rect key="frame" x="175" y="556" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FINISH"/>
+                                <connections>
+                                    <action selector="finish:" destination="Gb5-hL-TBi" eventType="touchUpInside" id="Oay-gy-sU0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VCD-Ke-aIA"/>
+                    </view>
+                    <connections>
+                        <outlet property="output" destination="Bqv-WY-ZtD" id="Otm-jC-YLL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfi-9U-MaB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4443.4782608695659" y="136.95652173913044"/>
+        </scene>
         <!--Age View Controller-->
         <scene sceneID="8me-ly-Zxp">
             <objects>
@@ -175,6 +210,9 @@
                                 <rect key="frame" x="171" y="215" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="YOUNG"/>
+                                <connections>
+                                    <action selector="young:" destination="wi6-1p-SaQ" eventType="touchUpInside" id="9lv-zX-vF2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2L-7B-7Lr">
                                 <rect key="frame" x="174" y="496" width="48" height="30"/>

@@ -10,6 +10,7 @@ import UIKit
 
 class TypeViewController: UIViewController {
     
+    public var rer:Double!
     public var cat:Bool!
 
     override func viewDidLoad() {
@@ -20,19 +21,23 @@ class TypeViewController: UIViewController {
     
 
     
+    
     @IBAction func catBotton(_ sender: Any) {
         cat = true
-        let vc = storyboard?.instantiateViewController(identifier: "age") as! AgeViewController
-        vc.title = "Age"
-        navigationController?.pushViewController(vc, animated: true)
-        
+        move_next()
     }
     
     
     @IBAction func dogBotton(_ sender: Any) {
         cat = false
+        move_next()
+    }
+    
+    func move_next(){
         let vc = storyboard?.instantiateViewController(identifier: "age") as! AgeViewController
         vc.title = "Age"
+        vc.rer = rer
+        vc.cat = cat
         navigationController?.pushViewController(vc, animated: true)
     }
     

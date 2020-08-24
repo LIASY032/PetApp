@@ -55,8 +55,11 @@ class ViewController: UIViewController {
 
             self.present(alert, animated: true)
         }else{
+            rer = RER(number)
             let vc = storyboard?.instantiateViewController(identifier: "type") as! TypeViewController
             vc.title = "Type"
+            let num:Double = rer?.calculateRER() ?? 0
+            vc.rer = num
             navigationController?.pushViewController(vc, animated: true)        }
     }
     
