@@ -27,9 +27,7 @@ class OutputViewController: UIViewController {
     }
     
     
-    @IBAction func finish(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "main") as! ViewController
-        navigationController?.pushViewController(vc, animated: true)
+    @IBAction func finish(_ sender: Any) {        navigationController?.popToRootViewController(animated: true)
     }
     
     

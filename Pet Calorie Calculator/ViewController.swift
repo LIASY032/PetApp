@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var weight: UITextField!
     
@@ -20,19 +20,38 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        
-        if (isNumeber(weight.text ?? "0")){
-            
-            rer = RER(number)
-        }else {
-            if (rer != nil){
-                
-            }
-        }
-        
+//        NotificationCenter.default.addObserver(self, selector: Selector(("keyboardWillShow:")), name: UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: Selector(("keyboardWillHide:")), name: UIResponder.keyboardWillHideNotification, object: nil)
+//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "cat_and_dog.jpg")!)
+        assignbackground()
     }
+    
+    func assignbackground(){
+        let background = UIImage(named: "cat_and_dog.jpg")
+
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
+    }
+    
+    
+//    func keyboardWillShow(notification: NSNotification) {
+//        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+//            self.view.frame.origin.y -= keyboardSize.height
+//        }
+//    }
+//
+//    func keyboardWillHide(notification: NSNotification) {
+//        self.view.frame.origin.y = 0
+//    }
+//
+    
+    
     
     //check the input whether is numbers
     func isNumeber(_ input: String) -> Bool {
