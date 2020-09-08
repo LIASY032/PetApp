@@ -20,14 +20,15 @@ class OutputViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let str:String = String(format: "%.2f",first_value * rer) + " - " + String(format: "%.2f",second_value * rer)
+        let str:String = String(format: "%.1f",first_value * rer) + " - " + String(format: "%.1f",second_value * rer)
         output.text = str
         
         
     }
     
     
-    @IBAction func finish(_ sender: Any) {        navigationController?.popToRootViewController(animated: true)
+    @IBAction func finish(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
     }
     
     

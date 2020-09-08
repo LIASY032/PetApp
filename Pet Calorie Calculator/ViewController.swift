@@ -8,21 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var weight: UITextField!
     
+    @IBOutlet weak var unit: UIPickerView!
     
-    public var rer:RER!
+    var pickerData:[String] = [String]()
+    
+    private var rer:RER!
+    
     
     //number that contains the weight
-    public var number:Double!
+    private var number:Double!
+    
+    //the units for unit UIPickerview
+    private var units:Double = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        NotificationCenter.default.addObserver(self, selector: Selector(("keyboardWillShow:")), name: UIResponder.keyboardWillShowNotification, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: Selector(("keyboardWillHide:")), name: UIResponder.keyboardWillHideNotification, object: nil)
-//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "cat_and_dog.jpg")!)
+        self.unit.delegate=self
+        self.unit.dataSource=self
+        pickerData = ["kg", "pounds"]
         assignbackground()
     }
     
@@ -38,25 +45,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.addSubview(imageView)
         self.view.sendSubviewToBack(imageView)
     }
-    
-    
-//    func keyboardWillShow(notification: NSNotification) {
-//        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-//            self.view.frame.origin.y -= keyboardSize.height
-//        }
-//    }
-//
-//    func keyboardWillHide(notification: NSNotification) {
-//        self.view.frame.origin.y = 0
-//    }
-//
-    
+
     
     
     //check the input whether is numbers
     func isNumeber(_ input: String) -> Bool {
         let myDouble = Double(input) ?? 0
-        number = myDouble
+        number = myDouble * units
         if (myDouble == 0){
             return false
         }else{
@@ -83,5 +78,34 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    // Number of columns of data
+    func numberOfComponents(in pickerView: UIPickerView)-> Int {
+        return 1
+    }
+    
+    // The number of rows of data
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    // The data to return fopr the row and component (column) that's being passed in
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if (pickerData[row] == pickerData[1]){
+            units = 0.453592
+        }else{
+            units = 1
+        }
+    }
+    
+    
 }
 

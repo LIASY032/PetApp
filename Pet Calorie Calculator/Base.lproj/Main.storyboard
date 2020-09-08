@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fhH-63-w5j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fhH-63-w5j">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,39 +15,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat_and_dog" translatesAutoresizingMaskIntoConstraints="NO" id="neh-Ie-nt7">
-                                <rect key="frame" x="-69" y="44" width="664" height="451"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-09-04 at 10.42.30 am" translatesAutoresizingMaskIntoConstraints="NO" id="BIp-gg-8CU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDv-RF-JK9">
-                                <rect key="frame" x="123" y="652.66666666666663" width="148" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="GO" backgroundImage="rectangle.fill" catalog="system">
-                                    <color key="titleShadowColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7c-te-He4"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yey-46-ddB">
-                                <rect key="frame" x="80" y="577" width="254" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0d-AW-U9Z">
-                                <rect key="frame" x="170" y="523" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="RJk-uk-lUl">
+                                <rect key="frame" x="61" y="335.33333333333331" width="292" height="145.33333333333331"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="CZA-35-BK3">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="145.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0d-AW-U9Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yey-46-ddB">
+                                                <rect key="frame" x="0.0" y="53.333333333333371" width="125" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDv-RF-JK9">
+                                                <rect key="frame" x="0.0" y="122.00000000000003" width="125" height="22"/>
+                                                <state key="normal" title="GO" backgroundImage="rectangle.fill" catalog="system">
+                                                    <color key="titleShadowColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7c-te-He4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yey-46-ddB" firstAttribute="centerX" secondItem="CZA-35-BK3" secondAttribute="centerX" id="uKo-ad-gGz"/>
+                                            <constraint firstAttribute="width" constant="125" id="yvz-en-uB3"/>
+                                        </constraints>
+                                    </stackView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMj-NA-bYy">
+                                        <rect key="frame" x="132" y="19" width="160" height="108"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="HrF-B5-d3J"/>
+                                            <constraint firstAttribute="width" constant="160" id="kbH-zP-LQd"/>
+                                        </constraints>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BIp-gg-8CU" secondAttribute="bottom" id="19g-na-1EK"/>
+                            <constraint firstItem="RJk-uk-lUl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="61" id="1DE-SX-XaP"/>
+                            <constraint firstItem="BIp-gg-8CU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3B4-IM-o3c"/>
+                            <constraint firstAttribute="trailing" secondItem="BIp-gg-8CU" secondAttribute="trailing" id="7sk-ps-fL3"/>
+                            <constraint firstItem="RJk-uk-lUl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="AUJ-LP-Set"/>
+                            <constraint firstItem="BIp-gg-8CU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MW3-5j-qgj"/>
+                            <constraint firstItem="BIp-gg-8CU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g2U-05-zoE"/>
+                            <constraint firstItem="BIp-gg-8CU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i0j-mI-5Rp"/>
+                            <constraint firstItem="RJk-uk-lUl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="274.67000000000002" id="p7M-lD-AtJ"/>
+                            <constraint firstItem="RJk-uk-lUl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ymW-4p-vsG"/>
+                            <constraint firstItem="RJk-uk-lUl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yx8-7g-Brc"/>
+                            <constraint firstItem="RJk-uk-lUl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="40" id="zzH-9J-Kts"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="PR8-5Y-rfO"/>
                     <connections>
+                        <outlet property="unit" destination="iMj-NA-bYy" id="dCl-b3-CUn"/>
                         <outlet property="weight" destination="yey-46-ddB" id="Q6v-II-2Wk"/>
                     </connections>
                 </viewController>
@@ -63,24 +95,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHj-OM-6Wu">
-                                <rect key="frame" x="100" y="200" width="131" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cat" image="cat"/>
-                                <connections>
-                                    <action selector="catBotton:" destination="zt0-3l-zjV" eventType="touchUpInside" id="fZM-RM-RYh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oeu-na-su9">
-                                <rect key="frame" x="57" y="400" width="203" height="163"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dog" image="dog"/>
-                                <connections>
-                                    <action selector="dogBotton:" destination="zt0-3l-zjV" eventType="touchUpInside" id="f1Y-LK-ges"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Cjw-Ma-xjz">
+                                <rect key="frame" x="157" y="258" width="100" height="220"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oeu-na-su9">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="6Mt-bm-JR6"/>
+                                            <constraint firstAttribute="height" constant="100" id="vEs-YK-coC"/>
+                                        </constraints>
+                                        <state key="normal" title="Dog" image="狗"/>
+                                        <connections>
+                                            <action selector="dogBotton:" destination="zt0-3l-zjV" eventType="touchUpInside" id="f1Y-LK-ges"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHj-OM-6Wu">
+                                        <rect key="frame" x="0.0" y="120" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="dZY-ta-fN0"/>
+                                            <constraint firstAttribute="height" constant="100" id="niD-gQ-CVN"/>
+                                        </constraints>
+                                        <state key="normal" title="Cat" image="猫"/>
+                                        <connections>
+                                            <action selector="catBotton:" destination="zt0-3l-zjV" eventType="touchUpInside" id="fZM-RM-RYh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Cat or Dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwN-am-5hH">
+                                <rect key="frame" x="134" y="217.66666666666666" width="146" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="1" green="0.63897310730137613" blue="0.92393715115342079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cjw-Ma-xjz" firstAttribute="centerY" secondItem="vZV-yu-FaD" secondAttribute="centerY" id="3IQ-fd-NtD"/>
+                            <constraint firstItem="Cjw-Ma-xjz" firstAttribute="top" secondItem="KwN-am-5hH" secondAttribute="bottom" constant="20" id="dJH-n4-WoG"/>
+                            <constraint firstItem="KwN-am-5hH" firstAttribute="centerX" secondItem="vZV-yu-FaD" secondAttribute="centerX" id="p50-Bp-ZlF"/>
+                            <constraint firstItem="Cjw-Ma-xjz" firstAttribute="centerX" secondItem="vZV-yu-FaD" secondAttribute="centerX" id="rNL-CA-OEd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GXs-fC-oK5"/>
                     </view>
                 </viewController>
@@ -96,72 +151,106 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KDl-Kt-uyM">
-                                <rect key="frame" x="107" y="156" width="200" height="485"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tRh-Fz-8c1">
+                                <rect key="frame" x="144.66666666666666" y="238" width="124.99999999999997" height="260"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3th-P3-3Fy">
-                                        <rect key="frame" x="4" y="98" width="169" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Critical care/hospitalized"/>
-                                        <connections>
-                                            <action selector="hospitalized:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="uSz-oy-X93"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeF-jR-FeM">
-                                        <rect key="frame" x="25" y="155" width="127" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Weight loss/obese"/>
-                                        <connections>
-                                            <action selector="obese:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="PLi-0N-asm"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-iA-5yP">
-                                        <rect key="frame" x="-3" y="236" width="183" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Overweight-prone/inactive"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-iA-5yP">
+                                        <rect key="frame" x="0.0" y="1.6666666666666643" width="125" height="17.000000000000004"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="O3L-ay-c14"/>
+                                        </constraints>
+                                        <state key="normal" title="inactive" backgroundImage="rectangle.fill" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="inactive:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="kux-wJ-4tx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWR-vX-0Y0">
-                                        <rect key="frame" x="56" y="286" width="64" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Neutered"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3th-P3-3Fy">
+                                        <rect key="frame" x="0.0" y="41.666666666666664" width="125" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="mm1-3I-KH4"/>
+                                        </constraints>
+                                        <state key="normal" title="hospitalized" backgroundImage="rectangle.fill" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
                                         <connections>
-                                            <action selector="neutered:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="LRR-Lh-Bq2"/>
+                                            <action selector="hospitalized:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="uSz-oy-X93"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rq-Vb-5jx">
-                                        <rect key="frame" x="68" y="346" width="40" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Intact"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeF-jR-FeM">
+                                        <rect key="frame" x="0.0" y="81.666666666666657" width="125" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="1NO-aJ-9Dv"/>
+                                        </constraints>
+                                        <state key="normal" title="Weight loss" backgroundImage="rectangle.fill" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
                                         <connections>
-                                            <action selector="intact:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="Tcg-S8-dKa"/>
+                                            <action selector="obese:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="PLi-0N-asm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHF-7A-9Vl">
-                                        <rect key="frame" x="56" y="384" width="64" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Lactation"/>
-                                        <connections>
-                                            <action selector="lactation:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="sG8-uy-RwA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="op2-NY-JaP">
-                                        <rect key="frame" x="56" y="439" width="66" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Gestation"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="op2-NY-JaP">
+                                        <rect key="frame" x="0.0" y="121.66666666666666" width="125" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="zVM-oF-ZKQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Gestation" backgroundImage="rectangle.fill" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="gestation:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="WJ7-1h-zH0"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWR-vX-0Y0">
+                                        <rect key="frame" x="0.0" y="161.66666666666666" width="125" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="9VH-Lw-coq"/>
+                                        </constraints>
+                                        <state key="normal" title="Neutered" backgroundImage="rectangle.fill" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="neutered:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="LRR-Lh-Bq2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHF-7A-9Vl">
+                                        <rect key="frame" x="0.0" y="201.66666666666666" width="125" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="z6v-cu-4BR"/>
+                                        </constraints>
+                                        <state key="normal" title="Lactation" backgroundImage="rectangle.fill" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lactation:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="sG8-uy-RwA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rq-Vb-5jx">
+                                        <rect key="frame" x="0.0" y="241.66666666666666" width="125" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Wff-wW-Pu4"/>
+                                        </constraints>
+                                        <state key="normal" title="Intact" backgroundImage="rectangle.fill" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="intact:" destination="xHQ-fe-jHp" eventType="touchUpInside" id="Tcg-S8-dKa"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Ezu-PZ-XzZ"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="FRp-Fz-Pku"/>
-                            </scrollView>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="K4R-A6-UQX"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tRh-Fz-8c1" firstAttribute="centerX" secondItem="mR8-ou-fUY" secondAttribute="centerX" id="SNd-JX-7mD"/>
+                            <constraint firstItem="tRh-Fz-8c1" firstAttribute="centerY" secondItem="mR8-ou-fUY" secondAttribute="centerY" id="nMO-Xg-JRb"/>
+                            <constraint firstItem="tRh-Fz-8c1" firstAttribute="centerY" secondItem="mR8-ou-fUY" secondAttribute="centerY" id="tT3-aW-pg5"/>
+                            <constraint firstItem="tRh-Fz-8c1" firstAttribute="centerX" secondItem="mR8-ou-fUY" secondAttribute="centerX" id="uAc-jU-R1X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4nC-VG-OH2"/>
                     </view>
                 </viewController>
@@ -177,23 +266,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="message" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-WY-ZtD">
-                                <rect key="frame" x="33" y="259" width="333" height="258"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="PFW-Bk-cwZ">
+                                <rect key="frame" x="107" y="307.33333333333331" width="200" height="121.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="message" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-WY-ZtD">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="calories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLs-Jc-rm8">
+                                        <rect key="frame" x="0.0" y="50.333333333333371" width="200" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LW2-wX-FXS">
+                                        <rect key="frame" x="0.0" y="102.33333333333334" width="200" height="18"/>
+                                        <state key="normal" title="FINISH" backgroundImage="rectangle.fill" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="finish:" destination="Gb5-hL-TBi" eventType="touchUpInside" id="l09-Qv-Giz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Eoc-hG-Z4S"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your pet needs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ry-jS-1tD">
+                                <rect key="frame" x="149.33333333333334" y="267" width="115.33333333333334" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LW2-wX-FXS">
-                                <rect key="frame" x="175" y="556" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="FINISH"/>
-                                <connections>
-                                    <action selector="finish:" destination="Gb5-hL-TBi" eventType="touchUpInside" id="Oay-gy-sU0"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PFW-Bk-cwZ" firstAttribute="top" secondItem="5Ry-jS-1tD" secondAttribute="bottom" constant="20" id="UMV-4v-mvW"/>
+                            <constraint firstItem="5Ry-jS-1tD" firstAttribute="centerX" secondItem="T45-za-5cu" secondAttribute="centerX" id="Yu0-Fc-953"/>
+                            <constraint firstItem="PFW-Bk-cwZ" firstAttribute="centerX" secondItem="T45-za-5cu" secondAttribute="centerX" id="eb8-fd-g9P"/>
+                            <constraint firstItem="PFW-Bk-cwZ" firstAttribute="centerY" secondItem="T45-za-5cu" secondAttribute="centerY" id="ghW-Zc-ZxW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VCD-Ke-aIA"/>
                     </view>
                     <connections>
@@ -212,24 +327,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-yP-2ZC">
-                                <rect key="frame" x="171" y="215" width="54" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="YOUNG"/>
-                                <connections>
-                                    <action selector="young:" destination="wi6-1p-SaQ" eventType="touchUpInside" id="9lv-zX-vF2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2L-7B-7Lr">
-                                <rect key="frame" x="174" y="496" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ADULT"/>
-                                <connections>
-                                    <action selector="adult:" destination="wi6-1p-SaQ" eventType="touchUpInside" id="fGG-NT-1xl"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="bfb-do-ZVj">
+                                <rect key="frame" x="132" y="318" width="150" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-yP-2ZC">
+                                        <rect key="frame" x="0.0" y="1.6666666666666643" width="150" height="22.000000000000004"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="HmQ-Zd-7mA"/>
+                                        </constraints>
+                                        <state key="normal" title="Puppy/Kitten" backgroundImage="rectangle.fill" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="young:" destination="wi6-1p-SaQ" eventType="touchUpInside" id="9lv-zX-vF2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2L-7B-7Lr">
+                                        <rect key="frame" x="0.0" y="76.666666666666657" width="150" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="2Wg-Kp-5zF"/>
+                                        </constraints>
+                                        <state key="normal" title="Adult" backgroundImage="rectangle.fill" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="adult:" destination="wi6-1p-SaQ" eventType="touchUpInside" id="fGG-NT-1xl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6xK-6y-PXm"/>
+                                    <constraint firstAttribute="width" constant="150" id="CCZ-fY-FiA"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puppy/Kitten/Adult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKX-3P-ztz">
+                                <rect key="frame" x="136" y="272.66666666666669" width="142.33333333333337" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bfb-do-ZVj" firstAttribute="centerX" secondItem="lej-Q6-RBf" secondAttribute="centerX" id="1Vb-4D-6FC"/>
+                            <constraint firstItem="AKX-3P-ztz" firstAttribute="centerX" secondItem="lej-Q6-RBf" secondAttribute="centerX" id="CPG-Sk-Eco"/>
+                            <constraint firstItem="bfb-do-ZVj" firstAttribute="top" secondItem="AKX-3P-ztz" secondAttribute="bottom" constant="25" id="MBu-rb-8SV"/>
+                            <constraint firstItem="bfb-do-ZVj" firstAttribute="centerY" secondItem="lej-Q6-RBf" secondAttribute="centerY" id="Qwx-rv-JtB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="luE-Tk-kqh"/>
                     </view>
                 </viewController>
@@ -257,9 +401,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cat" width="388" height="513"/>
-        <image name="cat_and_dog" width="720" height="450"/>
-        <image name="dog" width="241" height="209"/>
+        <image name="Screen Shot 2020-09-04 at 10.42.30 am" width="974" height="1284"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="狗" width="750" height="750"/>
+        <image name="猫" width="1200" height="1200"/>
     </resources>
 </document>
