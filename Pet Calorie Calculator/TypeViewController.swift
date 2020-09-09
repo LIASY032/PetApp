@@ -9,7 +9,9 @@
 import UIKit
 
 class TypeViewController: UIViewController {
+    public var foodName:String!
     
+    public var foodCalorie:Double!
     public var rer:Double!
     public var cat:Bool!
 
@@ -38,6 +40,8 @@ class TypeViewController: UIViewController {
         vc.title = "Age"
         vc.rer = rer
         vc.cat = cat
+        vc.foodCalorie = foodCalorie
+        vc.foodName = foodName
         navigationController?.pushViewController(vc, animated: true)
     }
     

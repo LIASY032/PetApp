@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471F6C8F2507C07B00F02E22 /* AddingFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471F6C8E2507C07B00F02E22 /* AddingFoodViewController.swift */; };
 		4786C4C624F25AFE003093BD /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786C4C524F25AFE003093BD /* AgeViewController.swift */; };
 		4786C4C824F26E54003093BD /* CondtionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786C4C724F26E54003093BD /* CondtionViewController.swift */; };
 		4786C4CA24F36B28003093BD /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786C4C924F36B28003093BD /* OutputViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		471F6C8E2507C07B00F02E22 /* AddingFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingFoodViewController.swift; sourceTree = "<group>"; };
 		4786C4C524F25AFE003093BD /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
 		4786C4C724F26E54003093BD /* CondtionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CondtionViewController.swift; sourceTree = "<group>"; };
 		4786C4C924F36B28003093BD /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				4786C4C524F25AFE003093BD /* AgeViewController.swift */,
 				4786C4C724F26E54003093BD /* CondtionViewController.swift */,
 				4786C4C924F36B28003093BD /* OutputViewController.swift */,
+				471F6C8E2507C07B00F02E22 /* AddingFoodViewController.swift */,
 			);
 			path = "Pet Calorie Calculator";
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				47E458CA24EF6E9D00335E9C /* RER.swift in Sources */,
 				4786C4CA24F36B28003093BD /* OutputViewController.swift in Sources */,
 				47E4589A24EF512800335E9C /* AppDelegate.swift in Sources */,
+				471F6C8F2507C07B00F02E22 /* AddingFoodViewController.swift in Sources */,
 				47E4589C24EF512800335E9C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

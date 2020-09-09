@@ -11,7 +11,9 @@ import UIKit
 class CondtionViewController: UIViewController {
     public var rer:Double!
     public var cat:Bool!
+    public var foodName:String!
     
+    public var foodCalorie:Double!
     
     
     
@@ -105,6 +107,8 @@ class CondtionViewController: UIViewController {
         vc.rer = rer
         vc.first_value = first_value
         vc.second_value = second_value
+        vc.foodName = foodName
+        vc.foodCalorie = foodCalorie
         navigationController?.pushViewController(vc, animated: true)
     }
     

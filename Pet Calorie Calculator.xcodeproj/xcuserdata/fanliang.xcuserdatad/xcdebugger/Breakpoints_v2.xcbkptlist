@@ -14,9 +14,149 @@
             filePath = "Pet Calorie Calculator/CondtionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "425A8849-2C78-429A-B963-9BAF624A6930"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pet Calorie Calculator/AddingFoodViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "confirm(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B68101D-FDC6-4DDD-A5AC-CAC40F3B6944"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pet Calorie Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5B68101D-FDC6-4DDD-A5AC-CAC40F3B6944 - 1bb704160c884e93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pet_Calorie_Calculator.ViewController.(foodCalorie in _DDEA81B44AD78FCF3ECC550B9F689EC8).getter : Swift.Optional&lt;Swift.Double&gt;"
+                  moduleName = "Pet Calorie Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fanliang/Desktop/p/picture/Pet%20Calorie%20Calculator/Pet%20Calorie%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "5B68101D-FDC6-4DDD-A5AC-CAC40F3B6944 - 1bb704160c884e93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pet_Calorie_Calculator.ViewController.(foodCalorie in _DDEA81B44AD78FCF3ECC550B9F689EC8).setter : Swift.Optional&lt;Swift.Double&gt;"
+                  moduleName = "Pet Calorie Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fanliang/Desktop/p/picture/Pet%20Calorie%20Calculator/Pet%20Calorie%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "5B68101D-FDC6-4DDD-A5AC-CAC40F3B6944 - 5c9afd20d6d79788"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pet_Calorie_Calculator.ViewController.(foodCalorie in _DDEA81B44AD78FCF3ECC550B9F689EC8).modify : Swift.Optional&lt;Swift.Double&gt;"
+                  moduleName = "Pet Calorie Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fanliang/Desktop/p/picture/Pet%20Calorie%20Calculator/Pet%20Calorie%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "5B68101D-FDC6-4DDD-A5AC-CAC40F3B6944 - b5b4d8cfc0e7f193"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pet_Calorie_Calculator.ViewController.(foodCalorie in _DDEA81B44AD78FCF3ECC550B9F689EC8).modify : Swift.Optional&lt;Swift.Double&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Pet Calorie Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fanliang/Desktop/p/picture/Pet%20Calorie%20Calculator/Pet%20Calorie%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "5B68101D-FDC6-4DDD-A5AC-CAC40F3B6944 - c268e70d92add6f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pet_Calorie_Calculator.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Pet_Calorie_Calculator.ViewController"
+                  moduleName = "Pet Calorie Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fanliang/Desktop/p/picture/Pet%20Calorie%20Calculator/Pet%20Calorie%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "900">
+               </Location>
+               <Location
+                  uuid = "5B68101D-FDC6-4DDD-A5AC-CAC40F3B6944 - 8d2fa69780741e76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pet_Calorie_Calculator.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Pet_Calorie_Calculator.ViewController&gt;"
+                  moduleName = "Pet Calorie Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fanliang/Desktop/p/picture/Pet%20Calorie%20Calculator/Pet%20Calorie%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "841">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3223686D-CFE7-4C88-B6C2-EA5824742012"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pet Calorie Calculator/AddingFoodViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "isNumeber(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

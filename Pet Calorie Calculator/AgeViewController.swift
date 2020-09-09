@@ -9,7 +9,9 @@
 import UIKit
 
 class AgeViewController: UIViewController {
+    public var foodName:String!
     
+    public var foodCalorie:Double!
     public var rer:Double!
     public var cat:Bool!
     
@@ -27,6 +29,8 @@ class AgeViewController: UIViewController {
         vc.title = "Condition"
         vc.rer = rer
         vc.cat = cat
+        vc.foodName = foodName
+        vc.foodCalorie = foodCalorie
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -36,6 +40,8 @@ class AgeViewController: UIViewController {
         vc.rer = rer
         vc.first_value = 2.5
         vc.second_value = 2.5
+        vc.foodName = foodName
+        vc.foodCalorie = foodCalorie
         navigationController?.pushViewController(vc, animated: true)
     }
     

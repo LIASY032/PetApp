@@ -33,9 +33,6 @@ class RER {
         return Double(value) * pow(weight, 0.75)
     }
     
-    func calculateMER(number:Double) ->Double {
-        return number * calculateRER()
-    }
     
 }
 

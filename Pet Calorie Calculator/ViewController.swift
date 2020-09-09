@@ -18,6 +18,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
     
     private var rer:RER!
     
+    private var foodName:String!
+    
+    private var foodCalorie:Double!
     
     //number that contains the weight
     private var number:Double!
@@ -30,22 +33,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
         self.unit.delegate=self
         self.unit.dataSource=self
         pickerData = ["kg", "pounds"]
-        assignbackground()
+        
     }
-    
-    func assignbackground(){
-        let background = UIImage(named: "cat_and_dog.jpg")
-
-        var imageView : UIImageView!
-        imageView = UIImageView(frame: view.bounds)
-        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.image = background
-        imageView.center = view.center
-        view.addSubview(imageView)
-        self.view.sendSubviewToBack(imageView)
-    }
-
     
     
     //check the input whether is numbers
@@ -74,6 +63,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
             vc.title = "Type"
             let num:Double = rer?.calculateRER() ?? 0
             vc.rer = num
+            vc.foodName = foodName
+            vc.foodCalorie = foodCalorie
             navigationController?.pushViewController(vc, animated: true)        }
     }
     
@@ -106,6 +97,18 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
         }
     }
     
+    @IBAction func addingFood(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "food") as! AddingFoodViewController
+        vc.title = "Adding Food"
+        vc.addingDelegate = self
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
 
+extension ViewController: AddingFoodDelegate{
+    func didFoodData(food_name:String, food_calorie:Double){
+        foodName = food_name
+        foodCalorie = food_calorie
+    }
+}
